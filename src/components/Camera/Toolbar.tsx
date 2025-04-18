@@ -17,7 +17,7 @@ const Toolbar: React.FC<ToolbarProps> = ({ capturedImage, toggleFlash, flashOn }
         <>
           {/* Back Icon */}
           <span
-            onClick={() => window.location.reload()} // Reload the page
+            onClick={() => history.push('/')}
             className="material-symbols-outlined text-white text-2xl cursor-pointer"
           >
             arrow_back
