@@ -20,8 +20,7 @@ const UserPopup: React.FC<UserPopupProps> = ({ user, onClose }) => {
             {/* Google Logo */}
             <div className="flex justify-center bg-no-repeat bg-contain">
                 <img
-                    src="/src/assets/google-white-logo.png" // Replace with the correct path to your Google logo
-                    alt="Google Logo"
+                    src="/src/assets/google-white-logo.png" 
                     className="w-20 h-8"
                 />
             </div>
