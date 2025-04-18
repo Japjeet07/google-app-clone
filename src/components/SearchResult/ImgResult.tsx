@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import Loader from '../Loader/Loader';
 import { newsData } from '../../dummy-data/news';
 import { useHistory } from 'react-router-dom';
+import gLogo from '../../assets/g-logo.png';
+import googleVoice from '../../assets/google-voice.png'; // Adjust the path as necessary
 
 interface ImgResultProps {
   isSlidingUp: boolean;
@@ -90,7 +92,7 @@ const ImgResult: React.FC<ImgResultProps> = ({
           {/* Google Logo */}
           <div className="flex-shrink-0">
             <img
-              src="/src/assets/g-logo.png"
+              src={gLogo}
               alt="Google Logo"
               className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8
                rounded-full object-cover"
@@ -122,7 +124,7 @@ const ImgResult: React.FC<ImgResultProps> = ({
           {/* Google Voice Icon */}
           <div className="flex-shrink-0">
             <img
-              src="/src/assets/google-voice.png"
+              src={googleVoice}
               alt="Google Voice"
               className="w-7 h-7 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer"
               onClick={() =>history.push('/voice-search')} // Navigate to Voice Search

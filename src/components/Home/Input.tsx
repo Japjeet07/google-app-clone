@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom'; 
+import googleVoice from '../../assets/google-voice.png';
+import googleLens from '../../assets/google-lens.png';
 
 const InputComponent: React.FC = () => {
   const history = useHistory(); 
@@ -35,14 +37,14 @@ const InputComponent: React.FC = () => {
       </div>
 
       <img
-        src="/src/assets/google-voice.png" // Replace with the correct path to your image
+        src={googleVoice} // Replace with the correct path to your image
         alt="Google Voice"
         className="w-8 h-8 cursor-pointer ml-auto mr-5" // Adjust size and spacing as needed
         onClick={handleVoiceClick} // Add functionality for Google Voice
       />
 
       <img
-        src="/src/assets/google-lens.png" // Replace with the correct path to your image
+        src={googleLens} // Replace with the correct path to your image
         alt="Google Lens"
         className="w-8 h-8 cursor-pointer " // Adjust size as needed
         onClick={handleCameraClick} // Navigate to /camera when clicked

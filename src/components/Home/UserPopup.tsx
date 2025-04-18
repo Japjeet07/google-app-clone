@@ -1,4 +1,5 @@
 import React from 'react';
+import googleWhiteLogo from '../../assets/google-white-logo.png'; // Adjust the path as necessary
 
 interface UserPopupProps {
     user: { name: string; email: string; picture: string } | null;
@@ -20,7 +21,7 @@ const UserPopup: React.FC<UserPopupProps> = ({ user, onClose }) => {
             {/* Google Logo */}
             <div className="flex justify-center bg-no-repeat bg-contain">
                 <img
-                    src="/src/assets/google-white-logo.png" 
+                    src={googleWhiteLogo}
                     className="w-20 h-8"
                 />
             </div>

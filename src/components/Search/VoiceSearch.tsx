@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom'; 
 import { Capacitor } from '@capacitor/core';
 import { SpeechRecognition } from '@capacitor-community/speech-recognition';
+import googleVoice from '../../assets/google-voice.png'; // Adjust the path as necessary
 
 const VoiceSearch: React.FC = () => {
   const [isListening, setIsListening] = useState(true); // Tracks if the mic is active
@@ -110,7 +111,7 @@ const VoiceSearch: React.FC = () => {
       <div className="dot-animation-container w-4">
         {showImage ? (
           <img
-            src="/src/assets/google-voice.png" // Replace with the correct path to your image
+            src={googleVoice} // Replace with the correct path to your image
             alt="Google Voice"
             className="w-12 h-12 cursor-pointer animate-pulse" // Add animation and styling
             onClick={() => {

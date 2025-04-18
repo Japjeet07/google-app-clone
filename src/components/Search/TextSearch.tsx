@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
+import googleVoice from '../../assets/google-voice.png';
+import googleLens from '../../assets/google-lens.png';
 
 const TextSearch: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -73,13 +75,13 @@ const TextSearch: React.FC = () => {
         {/* Icons */}
         <div className="flex items-center space-x-4">
           <img
-            src="/src/assets/google-voice.png"
+            src={googleVoice}
             alt="Voice Search"
             className="w-6 h-6 cursor-pointer mr-3"
             onClick={() => history.push('/voice-search')} // Navigate to Voice Search
           />
           <img
-            src="/src/assets/google-lens.png"
+            src={googleLens}
             alt="Google Lens"
             className="w-6 h-6 cursor-pointer "
             onClick={() => history.push('/camera')} // Navigate to Camera

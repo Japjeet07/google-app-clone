@@ -9,10 +9,14 @@ export default defineConfig({
         manualChunks: undefined, // Ensure dynamic imports are handled correctly
       },
     },
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
   },
   resolve: {
     alias: {
       '@emotion/react': '@emotion/react',
     },
   },
+ 
 });

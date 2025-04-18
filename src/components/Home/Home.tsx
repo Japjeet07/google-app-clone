@@ -8,6 +8,8 @@ import { SocialLogin } from '@capgo/capacitor-social-login';
 import Footer from '../Footer/Footer'; 
 import UserPopup from './UserPopup'; 
 import SwipeModal from '../../utils/SwipeModal';
+import flaskLogo from '../../assets/flask.png'
+import googleLogo from '../../assets/google-white-logo.png'
 
 
 
@@ -101,7 +103,7 @@ const Home: React.FC = () => {
                 aria-label="Experiment"
               >
                 <img
-                  src="/src/assets/flask.png"
+                  src={flaskLogo}
                   alt="Flask Icon"
                   className="w-9 h-7"
                   style={{
@@ -144,7 +146,7 @@ const Home: React.FC = () => {
           <div
             className="w-40 h-40 bg-no-repeat bg-contain"
             style={{
-              backgroundImage: "url('/src/assets/google-white-logo.png')",
+              backgroundImage: `url(${googleLogo})`,
               backgroundPosition: 'center top',
             }}
           ></div>

@@ -5,6 +5,11 @@ import Loader from '../Loader/Loader';
 import UserPopup from '../Home/UserPopup'; // Import the UserPopup component
 import SwipeModal from '../../utils/SwipeModal';
 import { searchResults } from '../../dummy-data/search-result';
+import gLogo from '../../assets/g-logo.png'; 
+import flask from '../../assets/flask.png';
+import googleVoice from '../../assets/google-voice.png'; 
+import googleLens from '../../assets/google-lens.png'; 
+import googlewhite from '../../assets/google-white-logo.png'; 
 
 const ResultPage: React.FC = () => {
 
@@ -56,7 +61,7 @@ const ResultPage: React.FC = () => {
 
   // Get user profile image from local storage
   const user = JSON.parse(localStorage.getItem('user') || '{}');
-  const userImage = user?.picture || '/src/assets/default-profile.png'; // Default profile image if not found
+  const userImage = user?.picture || gLogo; // Default profile image if not found
 
   return (
     <IonPage>
@@ -71,7 +76,7 @@ const ResultPage: React.FC = () => {
             <div className="flex items-center justify-between px-4 mb-2 mt-6">
               {/* Flask Icon */}
               <img
-                src="/src/assets/flask.png"
+                src={flask}
                 alt="Flask Icon"
                 className="w-9 h-7"
                 style={{
@@ -81,7 +86,7 @@ const ResultPage: React.FC = () => {
               />
               {/* Google Logo */}
               <img
-                src="/src/assets/google-white-logo.png"
+                src={googlewhite}
                 alt="Google Logo"
                 className="w-32 h-12"
               />
@@ -124,7 +129,7 @@ const ResultPage: React.FC = () => {
           <div className="flex items-center space-x-6">
             {/* Google Voice Icon */}
             <img
-              src="/src/assets/google-voice.png"
+              src={googleVoice}
               alt="Google Voice"
               className="w-6 h-6 cursor-pointer"
               onClick={() => history.push('/voice-search')} // Navigate to Voice Search
@@ -132,7 +137,7 @@ const ResultPage: React.FC = () => {
 
             {/* Google Lens Icon */}
             <img
-              src="/src/assets/google-lens.png"
+              src={googleLens}
               alt="Google Lens"
               className="w-6 h-6 cursor-pointer"
               onClick={() => history.push('/camera')} // Navigate to Voice Search
@@ -180,7 +185,7 @@ const ResultPage: React.FC = () => {
                   <div className="flex items-center space-x-4">
                     {/* Image */}
                     <img
-                      src="/src/assets/g-logo.png"
+                      src={gLogo}
                       alt="Google Logo"
                       className="w-5 h-5 flex-shrink-0"
                     />
