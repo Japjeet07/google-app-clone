@@ -16,8 +16,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@emotion/react': require.resolve('@emotion/react'),
-      '@emotion/styled': require.resolve('@emotion/styled'),
+      '@emotion/react': '@emotion/react',
+      '@emotion/styled': '@emotion/styled',
     },
   },
  
