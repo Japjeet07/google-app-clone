@@ -12,7 +12,7 @@ const config: CapacitorConfig = {
     },
   },
   server: {
-    url: 'https://vxqj79ww-5173.inc1.devtunnels.ms/', // Replace <your-computer-ip> with your local IP address
+    url: 'https://google-app-clone.onrender.com/', // Replace <your-computer-ip> with your local IP address
     cleartext: true,
     androidScheme: 'https', // Ensures routing works on Android
   },

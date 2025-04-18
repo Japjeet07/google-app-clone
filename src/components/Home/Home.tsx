@@ -59,7 +59,6 @@ const Home: React.FC = () => {
         console.log('Login Response:', response); // Log the response
 
         const profile = response.result.profile; // Access the profile object
-        alert(`Profile: ${JSON.stringify(profile)}`); // Show the profile in an alert
         const profileImageUrl = profile.imageUrl;
         console.log('Profile Image URL:', profileImageUrl);
 
@@ -68,6 +67,9 @@ const Home: React.FC = () => {
           email: profile.email,
           picture: profileImageUrl,
         };
+        
+        localStorage.setItem('user', JSON.stringify(userData));
+
 
         userRef.current = userData; // Store user data in the ref
         setUser(userData); // Update the state to trigger UI updates
