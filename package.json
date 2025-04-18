@@ -20,6 +20,8 @@
     "@capacitor/core": "^7.2.0",
     "@capacitor/ios": "^7.2.0",
     "@capgo/capacitor-social-login": "^7.5.3",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
     "@ionic/react": "^8.5.4",
     "@ionic/react-router": "^8.5.4",
     "@mui/material": "^7.0.2",
